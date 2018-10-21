@@ -15,7 +15,7 @@ var Kanji = document.getElementById("text");
 var Mean = document.getElementsByClassName("mm")[0];
 var On = document.getElementsByClassName("on")[0];
 var Kun = document.getElementsByClassName("kun")[0];
-var example = document.getElementsByClassName("example-content")[0];
+var example = document.getElementsByClassName("example")[0];
         
   
 loadWord("");
@@ -34,6 +34,7 @@ function loadWord(type) {
         Kun.innerText = "Kun: "+data.val().Kun.replace( /\s\s+/g,',');
         example.innerText = data.val().Example;
     })
+   
 }
 
 /*Add listener */
@@ -47,9 +48,7 @@ document.addEventListener('keydown', function (event) {
         loadWord("up");
     }
 });
-document.addEventListener('click', function (event) {
-   loadWord("up");
-});
+
 document.addEventListener('keydown', function (event) {
     if (event.keyCode == 37) {
         loadWord("down");

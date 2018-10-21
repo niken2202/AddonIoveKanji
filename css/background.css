@@ -1,7 +1,5 @@
 body {
     background-image: url(../images/bg.jpg);
-    /*font-family: 'Kosugi Maru', sans-serif;*/
-    display: flex;
 }
 
 @font-face {
@@ -9,76 +7,97 @@ body {
     src: url("../fonts/UVNDaLat_R.TTF");
 }
 
-#icon {
-    src: url("../images/hearts.png");
-    background-repeat: no-repeat;
-}
-
-.heart {
-    font-size: 150px;
-    color: #e00;
-    animation: beat .25s infinite alternate;
-    transform-origin: center;
-}
-
-/* Heart beat animation */
-
-@keyframes beat {
-    to {
-        transform: scale(1.4);
-    }
-}
-
-.container {
+.wrapper {
     width: 100%;
-    height: 80%;
-    background-color: #f8f9fa;
+    height: 100%;
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.content-wrapper {
+    width: 80%;
+    display: flex;
     flex-direction: column;
-    padding-top: 3%;
-    border-radius: 8px;
 }
 
-.wrapper-content {
-    height: 80%;
-    width: 70%;
-    border-radius: 8px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.content {
+    height: 90%;
+    width: 80%;
 }
 
-.word-wrapper {
+.learning-area {
     height: 80%;
-    width: 70%;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.word {
+    height: 60%;
     display: flex;
+}
+
+.kanji {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid;
+    border-color: #4CAF50;
+    border-width: 7px;
+}
+
+.mean {
+    height: 100%;
+    width: 60%;
+}
+
+.hanviet {
+    height: 40%;
+    text-align: center;
+}
+
+.on-wrapper {
+    height: 20%;
+}
+
+.kun-wrapper {
+    height: 40%;
+}
+
+.kun, .on {
+    padding-left: 20px;
+    font-size: 1.2vw;
+}
+
+.example {
+    margin-top: 10px;
+    height: 70%;
+    width: 65%;
     margin: auto;
+    font-size: 1.5vw;
+    padding: 10px 0px 0px 10px;
+    border-top: 2px solid #4CAF50;
+}
+
+.control {}
+
+.sidebar ul {
+    list-style-type: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar ul li {
+    margin-top: 10px;
 }
 
 #text {
     font-size: 15vw;
-    width: 100%;
-    line-height: 100%;
-}
-
-.kanji-word {
-    height: 100%;
-    width: 40%;
-    border-right: 1px solid;
-    border-color: #4CAF50;
-    border-width: 7px;
-    border-radius: 3px;
-}
-
-.explain {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .mm {
@@ -89,44 +108,10 @@ body {
     font-family: 'myFirstFont';
 }
 
-.mean {
-    height: 40%;
-    text-align: center;
-}
-
-.on-container {
-    height: 30%;
-}
-
-.on {
-    font-size: 2vw;
-    padding-left: 5px;
-}
-
-.kun {
-    top: 50%;
-    font-size: 1.5vw;
-    padding-left: 5px;
-}
-
-.kun-container {
-    height: 30%;
-}
-
-.example-content {
-    margin-top: 10px;
-    height: 70%;
-    width: 65%;
-    margin: auto;
-    font-size: 1.5vw;
-    padding: 10px 0px 0px 10px;
-    border-top: 2px solid #4CAF50;
-}
-
-/*Button */
-
-.control {
-    height: 20%;
+.sign {
+  
+    text-align: right;
+    padding: 30px 30px 0 0 ;
 }
 
 .wrap-control {
@@ -138,23 +123,20 @@ body {
 
 .control-left {
     background-image: url("../images/left-arrow.png");
+}
+
+.control-left, .control-right {
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    transition: all 0.3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.3s ease-in-out;
 }
 
 .control-right {
     background-image: url("../images/right.png");
-    background-repeat: no-repeat;
-    border-radius: 50%;
     margin-left: 30px;
-    width: 60px;
-    height: 60px;
-    background-position: center;
-    transition: all 0.3s ease-in-out;
 }
 
 .arrow:hover {
@@ -167,17 +149,4 @@ body {
 
 .control-right:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.sign {
-    margin-bottom: 10px;
-    text-align: right;
-}
-
-/*Side bar*/
-
-.sidebar {
-    height: 100%;
-    width: 20%;
-    background-color: #e00;
 }
