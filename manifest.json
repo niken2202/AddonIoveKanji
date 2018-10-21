@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "I Love Kanji",
+    "version": "1.0" ,
+    "description": "This is extentions hepl you learn japanase easily",
+    "icons":{
+        "128":"icons/icon128.png",
+        "48":"icons/icon48.png",
+        "16":"icons/icon16.png"
+    },
+    "browser_action":{
+        "default_icon":"icons/icon16.png"
+    },
+    "options_page":"options.html",
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+      },
+      "permissions": [
+        "tabs"
+      ],
+      "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/5.5.5/firebase.js 'unsafe-inline' 'sha256-L0MsZWdvxljUhS7hESxVHuanC/2iSYzFnoOiBaEJGHc='; object-src 'self'"
+
+}
