@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <title>I Love Kanji</title>
@@ -6,50 +5,61 @@
     <script src="js/background.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-
-
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-        <div class="wrapper">
-                <div class="sidebar">
-                    <ul>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Clients</li>
-                        <li>Contact</li>
-                    </ul>
-        
-                </div>
-                <div class="content-wrapper">
-                    <div class="content">
-                        <div class="learning-area">
-                            <div class="word">
-                                <div class="kanji"><span id="text"></span></div>
-                                <div class="mean">
-                                    <div class="hanviet">
-                                        <div class="mm">❤Loading...❤</div>
-                                    </div>
-                                    <div class="on-wrapper"><span class="on">❤Loading...❤</span></div>
-                                    <div class="kun-wrapper"><span class="kun">❤Loading...❤</span></div>
-        
-                                </div>
-                            </div>
-                            <div class="example">❤Loading...❤</div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Clients</li>
+                <li>
+                    <a href="https://www.facebook.com/ni.ken.984" target="_blank">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="learning-area">
+                    <div class="word">
+                        <div class="kanji">
+                            <span id="text"></span>
                         </div>
-                        <div class="control-area">
-                            <div class="wrap-control">
-                                <div class="control-left arrow" id="prev"></div>
-                                <div class="control-right arrow" id="next"></div>
+                        <div class="mean">
+                            <div class="hanviet">
+                                <div class="mm">❤Loading...❤</div>
                             </div>
+                            <div class="on-wrapper">
+                                <span class="on">❤Loading...❤</span>
+                            </div>
+                            <div class="kun-wrapper">
+                                <span class="kun">❤Loading...❤</span>
+                            </div>
+
                         </div>
-        
                     </div>
-                    <div class="sign">Created with <font color="red" size="3px">❤</font> by Le Trong Thang</div>
+                    <div class="example">❤Loading...❤</div>
                 </div>
-        
+                <div class="control-area">
+                    <div class="wrap-control">
+                        <div class="control-left arrow" id="prev"></div>
+                        <div class="control-right arrow" id="next"></div>
+                    </div>
+                </div>
+
             </div>
-    <script src="js/firebase.js"></script>
+            <div class="sign">Created with
+                <font color="red" size="3px">❤</font> by
+                <a href="https://www.facebook.com/ni.ken.984" target="_blank">Le Trong Thang</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/RequestData.js"></script>
+
 </body>
 
 </html>

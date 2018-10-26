@@ -1,0 +1,60 @@
+.wrapper {
+    height: 400px;
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mean,
+.on,
+.kun,
+.kanji,
+.example {
+    border-bottom: 1px solid #dddfe2;
+    width: 100%;
+}
+.kun,
+.on,
+.example{
+    padding: 3px 0 0 3px;
+}
+.mean {
+
+    height: 15%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    font-size: 2vw;
+
+}
+.sign{
+    width: 100%;
+    font-size: 8px;
+    text-align: right;
+}
+.kanji {
+
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 15vw;
+}
+
+.on {
+
+    height: 10%;
+
+}
+
+.kun {
+
+    height: 15%;
+
+}
+
+.example {
+
+    height: 20%;
+
+}
