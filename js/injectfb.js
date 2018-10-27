@@ -21,7 +21,9 @@ function injectData() {
             + '</div>'
             + '<div class="sign">Created with <font color="red">❤</font> by Le Trong Thang </div>';
         if (container.length != 0) {
-            container[3].innerHTML = html;
+            if(container.length==4){
+                container[3].innerHTML = html;
+            }
             container[2].innerHTML = html;
             container[0].innerHTML = html;
         }
